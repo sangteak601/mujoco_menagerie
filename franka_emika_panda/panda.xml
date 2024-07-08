@@ -249,6 +249,31 @@
         </body>
       </body>
     </body>
+    <body name="peg" pos="0.5 0 0.025">
+      <geom type="box" size="0.025 0.025 0.025" rgba="0 .8 0 1" />
+      <inertial pos="0 0 0" mass="1" diaginertia="1.0 1.0 1.0" />
+      <freejoint />
+    </body>
+    <body name="hole_base" pos="0 0.5 0.01">
+      <geom type="box" size="0.3 0.3 0.01" rgba=".8 0 0 1" />
+      <inertial pos="0 0 0" mass="100" />
+      <body name="hole_wall_1" pos="0 0.1625 0.025">
+        <geom type="box" size="0.3 0.1375 0.025" rgba=".8 0 0 1" />
+        <inertial pos="0 0 0" mass="100" />
+      </body>
+      <body name="hole_wall_2" pos="0 -0.1625 0.025">
+        <geom type="box" size="0.3 0.1375 0.025" rgba=".8 0 0 1" />
+        <inertial pos="0 0 0" mass="100" />
+      </body>
+      <body name="hole_wall_3" pos="-0.1625 0 0.025">
+        <geom type="box" size="0.1375 0.025 0.025" rgba=".8 0 0 1" />
+        <inertial pos="0 0 0" mass="100" />
+      </body>
+      <body name="hole_wall_4" pos="0.1625 0 0.025">
+        <geom type="box" size="0.1375 0.025 0.025" rgba=".8 0 0 1" />
+        <inertial pos="0 0 0" mass="100" />
+      </body>
+    </body>
   </worldbody>
 
   <sensor>
